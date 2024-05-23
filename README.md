@@ -1,40 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Paint Shop Application
+
+This is a Responsive React-based application for a paint shop. It includes a product search functionality, product sorting by price, and an API to fetch product data.
+
+## Features
+
+- Search products by name
+- Sort products by price (high, low)
+- Display message when no products are found
+- Responsive design with Tailwind CSS
+
+## Technologies Used
+
+- React
+- Next.js
+- Tailwind CSS
+- FontAwesome for icons
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js (version 14 or later)
+- npm or yarn
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+You can see the live hosted link   
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+OR   
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+You can follow this steps  
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/tareeqadnaan806/revest-assignment/.git
+   cd revest-assignment
 
-## Learn More
+2. **Install dependencies:**  
+   npm install
 
-To learn more about Next.js, take a look at the following resources:
+3. **Start the development server:**  
+   npm run dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Open your browser and navigate to http://localhost:3000.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+### Project Structure
+**pages/api/products.js:** API route to fetch product data.  
+**components/SearchBar.jsx:** Component for the search bar and product sorting.  
+**components/ProductCard.jsx:** Component for displaying individual product details.  
+**styles/globals.css:** Global styles for the application, including Tailwind CSS.  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Contributions
+Contributions are welcome feel free to contribute.
