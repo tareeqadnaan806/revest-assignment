@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const ProductCard = ({ product }) => {
   const {
@@ -12,23 +13,34 @@ const ProductCard = ({ product }) => {
     size,
     id,
   } = product;
+
   return (
     <div className="m-4">
       <div key={id}>
         <div className="product-card">
           <div className="product-card-image relative">
-            <img src={imageUrl1} alt={name} />
-            <img src={imageUrl2} alt={name} className="absolute mini-image" />
+            <Image src={imageUrl1} alt={name} width={350} height={500} />
+            <Image
+              src={imageUrl2}
+              alt={name}
+              width={125}
+              height={175}
+              className="absolute mini-image"
+            />
             {exclusive && (
-              <div className="  ">
-                <span className="bg-red-500 text-white p-1 rounded absolute exclusive ">
+              <div className="absolute exclusive ">
+                <span
+                  className="bg-red-500 text-white p-2 rounded-tr-lg rounded-bl-lg
+
+ "
+                >
                   Exclusive
                 </span>
               </div>
             )}
             {specialOfferPercentage && (
-              <div className="mb-2">
-                <span className="bg-yellow-300 p-1 rounded absolute offer">
+              <div className="absolute offer ">
+                <span className="bg-yellow-300 p-2 rounded-tl-lg rounded-br-lg ">
                   {specialOfferPercentage === "special offer on checkout"
                     ? specialOfferPercentage
                     : `${specialOfferPercentage}% OFF`}
@@ -44,9 +56,9 @@ const ProductCard = ({ product }) => {
                 <p className="text-2xl">
                   {price} SAR <span className="text-sm">(Incl. VAT)</span>
                 </p>
-                <p className="text-sm">Size {size} </p>
+                <p className="text-sm">Size {size}</p>
               </div>
-              <div className="text-green-500 ">
+              <div className="text-green-500">
                 <p>
                   <a href="">Visualizer</a>
                 </p>
