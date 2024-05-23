@@ -25,10 +25,6 @@ This is a Responsive React-based application for a paint shop. It includes a pro
 
 ### Installation
 
-You can see the live hosted link   
-
-OR   
-
 You can follow this steps  
 
 1. **Clone the repository:**
