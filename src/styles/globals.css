@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  padding: 0 30px;
+}
+
+.image {
+  height: 50px;
+}
+
+.footer {
+  background-color: #eceff8;
+  width: 100%;
+}
+
+.footer-contact {
+  height: 100px;
+  width: 100%;
+}
+
+hr {
+  border-top: 1px solid rgb(190, 188, 188);
+}
+
+h3 {
+  font-weight: bold;
+}
+
+li {
+  font-size: small;
+}
+
+.subscription-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.subscription-input {
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  flex: 1;
+  outline: none;
+}
+
+.subscription-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 3px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.subscription-button:hover {
+  background-color: #218838;
+}
+
+.social li {
+  margin: 7px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 400px;
+  margin: 20px auto;
+  height: 50px;
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-button {
+  background-color: #10b981;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button i {
+  color: white;
+  font-size: 18px;
+}
+
+.product-card {
+  width: 350px;
+  height: 500px;
+  border: 1px solid #d1d5db;
+}
+
+.mini-image {
+  width: 125px;
+  height: 175px;
+  top: 110px;
+  left: 215px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.exclusive {
+  padding: 5px 10px;
+  border-radius: 12px 0px 12px 0px;
+  font-size: small;
+  top: 11px;
+  left: 95px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.offer {
+  padding: 5px 10px;
+  border-radius: 12px 0px 12px 0px;
+  font-size: small;
+  top: 11px;
+  left: 11px;
+  gap: 0px;
+  opacity: 0px;
+}
